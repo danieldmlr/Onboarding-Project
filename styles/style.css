@@ -1,0 +1,103 @@
+@import './reset.css';
+html, body {
+  margin: 0 auto;
+  max-width: 425px;
+  min-width: 320px;
+  background: #FFFFFF;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 8%;
+}
+.card .logo {
+  margin-bottom: 2.2%;
+}
+.card .title {
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 8.25%;
+}
+.card .description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 0.9em;
+  margin-bottom: 20.31%;
+}
+.card .pointers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19.99%;
+  width: 22.21%;
+}
+.card .pointers .point {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+.card .pointers .pointer-active {
+  background: #92E3A9;
+  border: 1px solid #92E3A9;
+}
+.card .button {
+  width: 100%;
+  border: none;
+  background-color: #92E3A9;
+  box-shadow: 0px 4px 10px 0px #A1C3FC;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 4.5%;
+  margin-bottom: 13.35%;
+}
+.card .link-button {
+  width: 100%;
+}
+.card .link-skip {
+  color: #92E3A9;
+  font-size: 1.125rem;
+  font-weight: 500;
+  /*margin-bottom: 29.51%;*/
+  text-decoration: none;
+}
+
+.card-community:target {
+  display: flex;
+}
+
+.card-products {
+  display: none;
+}
+
+.card-products:target {
+  display: flex;
+}
+
+.card-ecommerce {
+  display: none;
+}
+
+.card-ecommerce:target {
+  display: flex;
+}
+
+.card-products:target ~ .card-community {
+  display: none;
+}
+
+.card-ecommerce:target ~ .card-community {
+  display: none;
+}
+
+@media screen and (max-width: 340px) {
+  .card .description {
+    padding: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
